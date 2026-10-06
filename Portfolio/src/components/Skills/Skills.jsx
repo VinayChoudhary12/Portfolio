@@ -11,11 +11,11 @@ import img9 from "../../assets/C++.png";
 import img8 from "../../assets/Python.png";
 import img7 from "../../assets/HTML.png";
 import img6 from "../../assets/CSS.png";
-import img5 from "../../assets/javaScript.jpeg"
 import img4 from "../../assets/React.png";
 import img3 from "../../assets/Nodejs.png";
 import img2 from "../../assets/ExpressJs.png";
 import img1 from "../../assets/MongoDB.png";
+import img5 from "../../assets/JavaScript.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
