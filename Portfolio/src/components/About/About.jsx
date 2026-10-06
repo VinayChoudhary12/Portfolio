@@ -3,9 +3,9 @@ import "./About.css";
 
 import Card from "../Card/Card";
 
-import mern from "../../assets/NEW_MERN.png";
 import DSA from "../../assets/DSA2.0.png";
 import Python from "../../assets/python_update.jpeg";
+import mern from "../../assets/New_MERN.png";
 
 const About = () => {
   return (
