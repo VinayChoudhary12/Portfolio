@@ -1,0 +1,94 @@
+/* =========================================
+   GLOBAL APPLICATION BACKGROUND
+========================================= */
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background: #080d12;
+
+    color: #fff;
+}
+
+
+/* Main application background */
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(122, 215, 234, 0.07),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(198, 42, 96, 0.06),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(122, 215, 234, 0.04),
+            transparent 35%
+        ),
+        #080d12;
+}
+
+
+/* Subtle grid */
+
+.App::before {
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+}
+
+
+/* Keep application content above grid */
+
+.App > * {
+    position: relative;
+
+    z-index: 1;
+}
